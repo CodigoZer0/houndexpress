@@ -1,0 +1,54 @@
+.main_guide-regis {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-template-rows: 75px 1fr;
+  box-sizing: border-box;
+  border-bottom: 10px solid #091E3F;
+  background-color: #091E3F;
+  gap: 10px;
+  border-bottom:  10px solid #6AC6DE;
+}
+@media screen and (max-width: 767px) {
+  .main_guide-regis {
+    gap: 20px;
+  }
+}
+.main_guide-regis-title {
+  grid-column: 2;
+  grid-row: 1;
+  color: #FFFFFF;
+}
+.main_guide-regis-form {
+  grid-column: 2/4;
+  grid-row: 2;
+  font-weight: 600;
+  width: 30%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.main_guide-regis-form fieldset {
+  border: 5px solid #6AC6DE;
+}
+.main_guide-regis-form-input {
+  font-family: "Open Sans", sans-serif;
+  background-color: #6AC6DE;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+}
+.main_guide-regis-form-buttons {
+  padding-top: 10px;
+}
+.main_guide-regis-form-buttons-sumbit {
+  padding: 15px 20px;
+  background-color: #091E3F;
+  color: #FFFFFF;
+  font-weight: 600;
+  border: 2px solid #6AC6DE;
+}
+.main_guide-regis-form-buttons-sumbit:hover {
+  background-color: #6AC6DE;
+  cursor: pointer;
+}

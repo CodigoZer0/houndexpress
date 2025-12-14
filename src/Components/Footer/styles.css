@@ -1,0 +1,109 @@
+.footer {
+  width: 100%;
+  background-color: #091E3F;
+  color: #FFFFFF;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.footer_logos {
+  width: 12%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.footer_logos-hound {
+  width: 10rem;
+}
+@media screen and (max-width: 767px) {
+  .footer_logos {
+    padding: 0;
+    align-self: flex-start;
+  }
+}
+.footer_logos-social-media {
+  padding-left: 28px;
+}
+.footer_logos-social-media img {
+  width: 25px;
+}
+@media screen and (max-width: 767px) {
+  .footer_logos-social-media {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+.footer_copyright {
+  align-self: flex-end;
+}
+.footer_copyright-text {
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.footer_contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: #FFFFFF;
+  gap: 10px;
+}
+.footer_contact-title {
+  grid-column: 1;
+  grid-row: 1;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+}
+.footer_contact-MX {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+}
+.footer_contact-MX-title {
+  padding-left: 20px;
+}
+.footer_contact-MX-mail {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_contact-MX-mail:hover {
+  color: #6AC6DE;
+}
+.footer_contact-MX-mail img {
+  width: 25px;
+  padding-right: 10px;
+}
+.footer_contact-MX-number {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer_contact-MX-number:hover {
+  color: #6AC6DE;
+}
+.footer_contact-MX-number img {
+  width: 25px;
+  padding-right: 10px;
+}
