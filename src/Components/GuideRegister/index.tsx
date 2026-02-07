@@ -1,14 +1,13 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import { useDispatch } from 'react-redux';
+import { addGuide } from '../../store/guideSlice';
 import './styles.css';
 import Header from "../Header";
 import Banner from "../Banner";
 import Footer from "../Footer";
 
-interface GuideRegisterProps {
-    addGuide: (guide: any) => void;
-}
-
-const GuideRegister = ({ addGuide }: GuideRegisterProps) => {
+const GuideRegister = () => {
+    const dispatch = useDispatch();
     const [formData, setFormData] = useState({
         guide_number: "",
         origin: "",
@@ -49,7 +48,7 @@ const GuideRegister = ({ addGuide }: GuideRegisterProps) => {
             statusValue: formData.status
         };
 
-        addGuide(newGuide);
+        dispatch(addGuide(newGuide));
         
         setFormData({
             guide_number: "",
