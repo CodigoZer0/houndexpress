@@ -31,12 +31,14 @@ const GuideList = ({ guides, onUpdateStatus }: GuideListProps) => {
                     <div className="main_lista-guide">
                         <table className="main_lista-guide-table" cellPadding="10" cellSpacing="0">
                             <thead className="main_lista-guide-table-head">
-                                <th>Número de guía</th>
-                                <th>Estado actual</th>
-                                <th>Origen</th>
-                                <th>Destino</th>
-                                <th>Última actualización</th>
-                                <th>Acciones</th>
+                                <tr>
+                                    <th>Número de guía</th>
+                                    <th>Estado actual</th>
+                                    <th>Origen</th>
+                                    <th>Destino</th>
+                                    <th>Última actualización</th>
+                                    <th>Acciones</th>
+                                </tr>
                             </thead>
                             <tbody className="main_lista-guide-table-body">
                                 {guides.map((guide: Guide, index: number) => (

@@ -33,9 +33,9 @@ const GuideState = ({ guides }: GuideStateProps) => {
                         <p className="main_general-status-table-num-total-guides">Número total de guías activas</p>
                         <p className="main_general-status-table-in-transit ">Guías en tránsito</p>
                         <p className="main_general-status-table-delivered ">Guías entregadas</p>
-                        <p className="main_general-status-table-row1 ">{totalGuides}</p>
-                        <p className="main_general-status-table-row2 ">{inTransit}</p>
-                        <p className="main_general-status-table-row3 ">{delivered}</p>
+                        <p className="main_general-status-table-row1 " data-testid="total-guides">{totalGuides}</p>
+                        <p className="main_general-status-table-row2 " data-testid="in-transit">{inTransit}</p>
+                        <p className="main_general-status-table-row3 " data-testid="delivered">{delivered}</p>
                     </div>
                 </section>
             </section>

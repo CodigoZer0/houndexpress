@@ -50,14 +50,7 @@ const GuideRegister = () => {
 
         dispatch(addGuide(newGuide));
         
-        setFormData({
-            guide_number: "",
-            origin: "",
-            destination: "",
-            receiver: "",
-            date: "",
-            status: "1"
-        });
+        
 
         alert("Guía registrada exitosamente");
     };
@@ -69,7 +62,7 @@ const GuideRegister = () => {
                 <Banner />
                 <section className="main_guide-regis" id="registro">
                     <h2 className="main_guide-regis-title">Registro de guías</h2>
-                    <form className="main_guide-regis-form" onSubmit={handleSubmit}>
+                    <form className="main_guide-regis-form" data-testid="guide-register-form" onSubmit={handleSubmit}>
                         <fieldset>
                             <legend>Registra tu guía</legend>
                             <div>
